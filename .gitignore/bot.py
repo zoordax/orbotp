@@ -75,7 +75,7 @@ async def on_message(message):
             
     if str( message.channel ) in channels:
         if message.content.find ("!exemple") != -1:
-            await message.channel.send("!drider", delete_after = 60)
+            await message.channel.send("!drider", delete_after = 3600)
             await asyncio.sleep(60)
             await message.delete() 
 
