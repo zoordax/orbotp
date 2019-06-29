@@ -81,7 +81,7 @@ async def on_message(message):
 
     if str( message.channel ) in channels and str(message.author) in v_u:
         if message.content.find ("!loutre") != -1:
-            await message.channel.send("<@415175231565463552> koya est out !!!", delete_after=30)
+            await message.channel.send(" koya est out !!!", delete_after=3)
             await asyncio.sleep(3)
             await message.delete()
             
