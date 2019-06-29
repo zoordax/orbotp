@@ -52,7 +52,7 @@ async def on_message(message):
             await message.delete()
             
 
-    if str( message.channel ) in channels and str(message.author) in v_u:
+    if str( message.channel ) in channels :
         if message.content == "!monstres":
             embed = discord.Embed( title="**Monstre**" , description="Pour utiliser le bot taper : \n **!le_monstre**\nsi vous voulez un exemple pour utiliser le bot taper : \n!exemple"  , color = 0xff1c21 )
             embed.add_field( name="***>>>***Tous les monstres***<<<***" , value="\n ailedegivre \nailenoire\nbetedesneiges\nchaman\ndrider\nepinator\ngargantua\ngolem\ngriffon\nfaucheuse\nmorphalange\ntroyen\nlarve\nnoceros\nreineabeille\nsabrecroc\ntitan\nwyrm" )
