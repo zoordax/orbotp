@@ -78,6 +78,12 @@ async def on_message(message):
             
             
     if str( message.channel ) in kyn and str(message.author) in toig :
+        if message.content.find ("!toigal2") != -1:
+            await message.channel.send(file=discord.File('heros/toigal2.jpg'), delete_after = 500)
+            await asyncio.sleep(500)
+            await message.delete()  
+            
+    if str( message.channel ) in kyn and str(message.author) in toig :
         if message.content.find ("!toigal") != -1:
             await message.channel.send(file=discord.File('heros/toigal.jpg'), delete_after = 500)
             await asyncio.sleep(500)
