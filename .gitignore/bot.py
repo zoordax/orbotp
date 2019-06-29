@@ -25,10 +25,10 @@ async def on_message(message):
     v_u = ["zoordax#7914", "KyNeK974#0692"]
     v2_u = ["toigal#5408","zoordax#7914", "KyNeK974#0692"]
     toig = ["Nananette Anne#6943", "zoordax#7914", "toigal#5408"]
-    channels = ["🦎monstres🦎", "loutrasse", "site-web"]
+    channels = ["👽monstres👽", "loutrasse", "site-web"]
     chan = ["site-web", "loutrasse" ]
     user = ["loutrasse"]
-    kyn = ["🎤no-micro-mix-🎤", "🙉humour🙉","🎧dialogue ORB (Main)🎧"]
+    kyn = ["🎤no-micro-mix-🎤", "🤡humour🤡","🎧dialogue ORB (Main)🎧"]
     youtube = "https://www.youtube.com/channel/UCWQH8J7AY0AwWqIIdDFbLTQ"
     site = "https://lords-mobile.info/"
      
