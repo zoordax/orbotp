@@ -42,7 +42,7 @@ async def on_message(message):
             await message.channel.send (f"""# of Members: {id.member_count}, at {DT.datetime.now()}""")
             
     
-    if str( message.channel ) in chan:
+    if str( message.channel ):
         if message.content == ":help":
             embed = discord.Embed( title="orbot" , description="salut ! je suis orbot !", color = 0xff1c21 )
             embed.add_field( name="Monstres" , value="je peux te donner les differentes composition pour les monstres pour cela direction <#548863999362596865>" )
@@ -61,7 +61,7 @@ async def on_message(message):
             await message.delete()
             
             
-    if str( message.channel ) in chan:
+    if str( message.channel ) :
         if message.content == "!orb":
             file = discord.File("heros/orb.jpg", filename="orb.jpg")
             embed = discord.Embed( title="ORB" , description="***Ici les different moyens de trouver orb***", color = 0xff1c21 )
