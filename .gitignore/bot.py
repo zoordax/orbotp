@@ -28,7 +28,7 @@ async def on_message(message):
     channels = ["monstres", "loutrasse", "site-web"]
     chan = ["commandes", "site-web", "loutrasse" ]
     user = ["commandes", "loutrasse"]
-    kyn = ["no-micro-mix", "humour"]
+    kyn = ["no-micro-mix", "humour","général-orb-main"]
     youtube = "https://www.youtube.com/channel/UCWQH8J7AY0AwWqIIdDFbLTQ"
     site = "https://lords-mobile.info/"
      
