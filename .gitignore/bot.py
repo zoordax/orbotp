@@ -87,14 +87,14 @@ async def on_message(message):
             
     if str( message.channel ) in kyn and str(message.author) in toig :
         if message.content.find ("!toigal2") != -1:
-            await message.channel.send(file=discord.File('heros/toigal2.jpg'), delete_after = 500)
-            await asyncio.sleep(500)
+            await message.channel.send(file=discord.File('heros/toigal2.jpg'), delete_after = 600)
+            await asyncio.sleep(600)
             await message.delete()  
             
     if str( message.channel ) in kyn and str(message.author) in toig :
         if message.content.find ("!toigal") != -1:
-            await message.channel.send(file=discord.File('heros/toigou.gif'), delete_after = 500)
-            await asyncio.sleep(500)
+            await message.channel.send(file=discord.File('heros/toigou.gif'), delete_after = 600)
+            await asyncio.sleep(600)
             await message.delete()    
             
             
@@ -107,8 +107,8 @@ async def on_message(message):
 
     if str( message.channel ) in kyn and str(message.author) in v2_u :
         if message.content.find ("!panda") != -1:
-            await message.channel.send(file=discord.File('heros/panda.jpg'), delete_after = 3600)
-            await asyncio.sleep(3600)
+            await message.channel.send(file=discord.File('heros/panda.jpg'), delete_after = 600)
+            await asyncio.sleep(600)
             await message.delete()
 
     if str( message.channel ) in channels :
