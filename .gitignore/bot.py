@@ -30,6 +30,8 @@ async def on_message(message):
     kyn = ["🎤-no-micro-mix-🎤", "🤡-humour-🤡","🎧 dialogue ORB (Main) 🎧"]
     youtube = "https://www.youtube.com/channel/UCWQH8J7AY0AwWqIIdDFbLTQ"
     site = "https://lords-mobile.info/"
+    ping_ = client.latency
+    ping = round(ping_ * 1000 )
      
    
 
@@ -73,6 +75,15 @@ async def on_message(message):
 
             
             
+    if str(message.channel) :
+        if message.content == "!ping" :
+            embed = discord.Embed( title = ":pong: PONG! :pong:",  color = 0xff1c21)
+            embed.add_field(name = "***super-vitesse", value = f"<:sablier:596030953374220319>mon temps de latence est de {ping} ms")
+            await message.channel.send(file = file , embed=embed)
+                                     
+            
+            
+            
     if str( message.channel ) in channels:
         if message.content.find ("!exemple") != -1:
             await message.channel.send("!drider", delete_after = 3600)
@@ -80,13 +91,6 @@ async def on_message(message):
             await message.delete()
     
 
-    if str(message.channel):
-        if message.content.find ("!ping") != -1:
-            ping_ = client.latency
-            ping = round(ping_ * 1000 )
-            await message.channel.send(f"coucou mon temps de reponse est de {ping} ms", delete_after = 10)
-            await asyncio.sleep(10)
-            await message.delete()
 
     if str( message.channel ) in channels and str(message.author) in v_u:
         if message.content.find ("!loutre") != -1:
