@@ -33,7 +33,8 @@ async def on_message(message):
      
    
 
-    
+
+            
     if str(message.channel) in user and str(message.author) in v_u:
         if message.content.find ("$hello") != -1:
             await message.channel.send ("hi")
@@ -76,7 +77,15 @@ async def on_message(message):
         if message.content.find ("!exemple") != -1:
             await message.channel.send("!drider", delete_after = 3600)
             await asyncio.sleep(60)
-            await message.delete() 
+            await message.delete()
+            
+    if message.content.find ("!ping") != -1:
+        if str(message.channel):
+			ping_ = client.latency
+			ping = round(ping_ * 1000 )
+			await message.channel.send(f"coucou mon temps de reponse est de {ping} ms", delete_after = 10)
+            await asyncio.sleep(10)
+            await message.delete()
 
     if str( message.channel ) in channels and str(message.author) in v_u:
         if message.content.find ("!loutre") != -1:
