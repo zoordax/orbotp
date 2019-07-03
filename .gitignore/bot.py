@@ -78,7 +78,7 @@ async def on_message(message):
     if str(message.channel) :
         if message.content == "!ping" :
             embed = discord.Embed( title = ":pong: PONG! :pong:",  color = 0xff1c21)
-            embed.add_field(name = "***super-vitesse", value = f"<:sablier:596030953374220319>mon temps de latence est de {ping} ms")
+            embed.add_field(name = "***super-vitesse***", value = f"<:sablier:596030953374220319>mon temps de latence est de {ping} ms")
             await message.channel.send(content = None , embed=embed)
                                      
             
