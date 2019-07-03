@@ -78,10 +78,11 @@ async def on_message(message):
             await message.channel.send("!drider", delete_after = 3600)
             await asyncio.sleep(60)
             await message.delete()
-            
-    if message.content.find ("!ping") != -1:
-        if str(message.channel):
-			ping_ = client.latency
+    
+
+	if str(message.channel):
+		if message.content.find ("!ping") != -1:
+        	ping_ = client.latency
 			ping = round(ping_ * 1000 )
 			await message.channel.send(f"coucou mon temps de reponse est de {ping} ms", delete_after = 10)
             await asyncio.sleep(10)
