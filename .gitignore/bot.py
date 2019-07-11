@@ -57,7 +57,7 @@ async def on_message(message):
     if str( message.channel ) in channels :
         if message.content == "!monstres":
             embed = discord.Embed( title="**Monstre**" , description="Pour utiliser le bot taper : \n **!le_monstre**\nsi vous voulez un exemple pour utiliser le bot taper : \n!exemple"  , color = 0xff1c21 )
-            embed.add_field( name="***>>>***Tous les monstres***<<<***" , value="\n ailedegivre \nailenoire\nbetedesneiges\nchaman\ndrider\nepinator\ngargantua\ngolem\ngriffon\nfaucheuse\nmorphalange\ntroyen\nlarve\nnoceros\nreineabeille\nsabrecroc\ntitan\nwyrm" )
+            embed.add_field( name="***>>>***Tous les monstres***<<<***" , value="\n ailedegivre \nailenoires\nbetedesneiges\nchaman\ndrider\nepinator\ngargantua\ngolem\ngriffon\nfaucheuse\nmorphalange\ntroyen\nlarve\nnoceros\nreineabeille\nsabrecroc\ntitan\nwyrm" )
             await message.channel.send( content=None , embed=embed , delete_after = 60 )
             await asyncio.sleep(60)
             await message.delete()
@@ -107,7 +107,7 @@ async def on_message(message):
             
     if str( message.channel ) in kyn and str(message.author) in toig :
         if message.content.find ("!toigal") != -1:
-            await message.channel.send(file=discord.File('heros/toigou.gif'), delete_after = 600)
+            await message.channel.send(file=discord.File('heros/toigou.gif'), delete_after = 600)  
             await asyncio.sleep(600)
             await message.delete()    
             
